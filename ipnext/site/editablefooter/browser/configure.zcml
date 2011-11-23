@@ -1,13 +1,12 @@
-<configure
-    xmlns:zope="http://namespaces.zope.org/zope"
-    xmlns:browser="http://namespaces.zope.org/browser">
+<configure xmlns:zope="http://namespaces.zope.org/zope"
+	xmlns:browser="http://namespaces.zope.org/browser">
 
-    <browser:page
-        for="plone.app.layout.navigation.interfaces.INavigationRoot"
-        name="footer-controlpanel"
-        class=".controlpanel.FooterControlPanelView"
-        permission="cmf.ManagePortal"
-        />
-    
-  
+	<browser:page for="plone.app.layout.navigation.interfaces.INavigationRoot"
+		name="footer-controlpanel" class=".controlpanel.FooterControlPanelView"
+		permission="cmf.ManagePortal" />
+
+	<browser:viewlet name="ipnext.site.editablefooter"
+		manager="plone.app.layout.viewlets.interfaces.IPortalFooter" layer=".interfaces.IEditableFooterLayer"
+		class=".viewlets.EditableFooterViewlet" permission="zope2.View" />
+
 </configure>
