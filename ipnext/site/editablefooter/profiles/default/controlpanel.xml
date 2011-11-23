@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<object
+    name="portal_controlpanel"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="optilux.cinemacontent ">
+    <configlet
+        title="Footer settings"
+        action_id="footer"
+        appId="footer"
+        category="Products"
+        condition_expr=""
+        url_expr="string:${portal_url}/@@footer-controlpanel"
+        icon_expr="string:$portal_url/skins_icon.png"
+        visible="True"
+        i18n:attributes="title">
+            <permission>Manage portal</permission>
+    </configlet>
+</object>
