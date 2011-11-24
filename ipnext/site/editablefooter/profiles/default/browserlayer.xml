@@ -1,0 +1,6 @@
+<layers>
+ <layer
+     name="ipnext.site.editablefooter"
+     interface="ipnext.site.editablefooter.browser.interfaces.IEditableFooterLayer"
+     />
+</layers>
