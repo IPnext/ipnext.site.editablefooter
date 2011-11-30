@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = '0.1.2'
 
 setup(name='ipnext.site.editablefooter',
       version=version,
-      description="Edit the footer TTW",
+      description="Edit the footer in the Plone Control Panel",
       long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from

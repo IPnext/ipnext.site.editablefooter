@@ -26,4 +26,5 @@ class TestSetup(unittest.TestCase):
         self.assertTrue(False)
 
     def test__control_panel_configlet(self):
+        import pdb; pdb.set_trace()
         self.assertTrue(False)

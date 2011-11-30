@@ -11,9 +11,10 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="Editable footer viewlet"
+      title="Editable footer"
       directory="profiles/default"
-      description="Installs an editable footer viewlet, hiding the default one"
+      description="Replaces the standard footer viewlet with one that's
+      editable in the Plone Control Panel."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 

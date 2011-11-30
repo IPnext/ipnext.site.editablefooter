@@ -14,12 +14,12 @@ class FooterControlPanelForm(RegistryEditForm):
     schema = IFooterSettings
     label = _(u"Footer control panel")
 
+    # Replace the standard field widget with a nicer one
     fields = field.Fields(IFooterSettings)
     fields['footer'].widgetFactory = WysiwygFieldWidget
 
     def update(self):
         super(RegistryEditForm, self).update()
-        #self.widgets['footer'].cols = 8
 
 
 FooterControlPanelView = layout.wrap_form(
