@@ -18,4 +18,12 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Uninstall the editable footer"
+      directory="profiles/uninstall"
+      description=""
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
 </configure>
