@@ -1,5 +1,5 @@
 <registry> 
-    <records 
+    <records>
         interface="ipnext.site.editablefooter.browser.interfaces.IFooterSettings">
         <value key="footer">
         	&lt;p&gt;
