@@ -1,7 +1,9 @@
 from plone.app.testing import PloneSandboxLayer
-from plone.app.testing import applyProfile
 from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import IntegrationTesting
+
+from plone.app.testing import setRoles
+from plone.app.testing import TEST_USER_ID, TEST_USER_NAME, login
 
 from plone.testing import z2
 
@@ -18,8 +20,11 @@ class EditableFooterTestingLayer(PloneSandboxLayer):
         z2.installProduct(app, 'ipnext.site.editablefooter')
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'ipnext.site.editablefooter:default')
-
+        self.applyProfile(portal, 'ipnext.site.editablefooter:default')
+        setRoles(portal, TEST_USER_ID, ['Manager'])
+        login(portal, TEST_USER_NAME)
+        setRoles(portal, TEST_USER_ID, ['Site Administrator']) 
+       
     def tearDownZope(self, app):
         z2.uninstallProduct(app, 'ipnext.site.editablefooter')
 
@@ -29,4 +34,3 @@ EDITABLEFOOTER_INTEGRATION_TESTING = IntegrationTesting(
     bases=(EDITABLEFOOTER_FIXTURE,),
     name="EditableFooterTestingLayer:Integration",
 )
-
