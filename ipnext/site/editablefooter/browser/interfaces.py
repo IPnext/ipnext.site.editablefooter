@@ -1,6 +1,7 @@
 from zope.interface import Interface
 from zope import schema
 
+from ipnext.site.editablefooter.config import TMPL_YEAR
 from ipnext.site.editablefooter import _
 
 
@@ -9,7 +10,9 @@ class IFooterSettings(Interface):
     """
     footer = schema.Text(
         title=_(u"Footer text"),
-        description=_(u"Your footer text"),
+        description=_(
+            u'Your footer text. You may also use the template variable %s' % TMPL_YEAR
+        ),
         required=False,
     )
     

@@ -1,3 +1,6 @@
+
+from datetime import date
+
 from zope.component import queryUtility
 
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
@@ -6,6 +9,7 @@ from plone.app.layout.viewlets.common import ViewletBase
 
 from plone.registry.interfaces import IRegistry
 
+from ipnext.site.editablefooter.config import TMPL_YEAR
 from ipnext.site.editablefooter.browser.interfaces import IFooterSettings
 from ipnext.site.editablefooter import _
 
@@ -30,4 +34,7 @@ class EditableFooterViewlet(ViewletBase):
                 IFooterSettings, check=False
             )
             footer_text = getattr(settings, 'footer', footer_text)
-        return footer_text
+            
+        # Replace the substring for the year
+        this_year = str(date.today().year)
+        return footer_text.replace(TMPL_YEAR, this_year)
