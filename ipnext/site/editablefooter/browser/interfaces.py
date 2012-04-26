@@ -1,8 +1,6 @@
 from zope.interface import Interface
 from zope import schema
 
-from plone.app.textfield import RichText
-
 from ipnext.site.editablefooter.config import TMPL_YEAR
 from ipnext.site.editablefooter import _
 
@@ -10,7 +8,7 @@ from ipnext.site.editablefooter import _
 class IFooterSettings(Interface):
     """Describes registry records
     """
-    footer = RichText(
+    footer = schema.Text(
         title=_(u"Footer text"),
         description=_(
             u'Your footer text. You may also use the template variable %s' % TMPL_YEAR
@@ -23,4 +21,5 @@ class IEditableFooterLayer(Interface):
 
     This interface is referred in browserlayers.xml.
     """
+    
     
