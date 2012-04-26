@@ -9,7 +9,7 @@ from ipnext.site.editablefooter.config import TMPL_YEAR
 from ipnext.site.editablefooter import _
 
 
-class IFooterSettings(Interface):
+class IFooterSettings(form.Schema):
     """Describes registry records
     """
     form.widget(footer=WysiwygFieldWidget)

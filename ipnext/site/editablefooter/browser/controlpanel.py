@@ -1,5 +1,7 @@
 from z3c.form import field
 
+from five import grok
+
 from plone.z3cform import layout
 from plone.app.z3cform.wysiwyg import WysiwygFieldWidget
 
@@ -11,6 +13,8 @@ from ipnext.site.editablefooter import _
 
 
 class FooterControlPanelForm(RegistryEditForm):
+    grok.context(IFooterSettings)
+
     schema = IFooterSettings
     label = _(u"Footer control panel")
 
