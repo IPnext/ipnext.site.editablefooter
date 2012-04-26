@@ -36,5 +36,6 @@ class EditableFooterViewlet(ViewletBase):
             footer_text = getattr(settings, 'footer', footer_text)
             
         # Replace the substring for the year
-        this_year = str(date.today().year)
-        return footer_text.replace(TMPL_YEAR, this_year)
+        if footer_text is not None:
+            this_year = str(date.today().year)
+            return footer_text.replace(TMPL_YEAR, this_year)

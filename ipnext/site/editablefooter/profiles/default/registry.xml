@@ -1,17 +1,22 @@
-<registry> 
+<registry>
     <records
+        field="footer"
         interface="ipnext.site.editablefooter.browser.interfaces.IFooterSettings">
-        <value key="footer">
-        	&lt;p&gt;
-	        	The 
-				&lt;a href="http://plone.org"&gt;Plone
-				&lt;sup&gt;&#174;&lt;/sup&gt;Open Source CMS/WCM&lt;/a&gt; is 
-				&lt;acronym title="Copyright"&gt;&#169;&lt;/acronym&gt;2000-${year} by the 
-				&lt;a href="http://plone.org/foundation"&gt;Plone Foundation&lt;/a&gt; and
-				friends. Distributed under the 
-				&lt;a href="http://creativecommons.org/licenses/GPL/2.0/"&gt;GNU GPL
-				license&lt;/a&gt;.
-			&lt;/p&gt;
-        </value>
-    </records> 
+        name="ipnext.site.editablefooter.browser.interfaces.IFooterSettings.footer">
+        <value key="footer"
+            purge="false">
+            &lt;p&gt;
+            The
+            &lt;a href="http://plone.org"&gt;Plone
+            &lt;sup&gt;&#174;&lt;/sup&gt;Open Source CMS/WCM&lt;/a&gt; is
+            &lt;acronym title="Copyright"&gt;&#169;&lt;/acronym&gt;2000-${year}
+            by the
+            &lt;a href="http://plone.org/foundation"&gt;Plone
+            Foundation&lt;/a&gt; and
+            friends. Distributed under the
+            &lt;a
+            href="http://creativecommons.org/licenses/GPL/2.0/"&gt;GNU GPL
+            license&lt;/a&gt;.
+            &lt;/p&gt; </value>
+    </records>
 </registry> 
