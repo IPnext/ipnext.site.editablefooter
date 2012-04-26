@@ -14,10 +14,7 @@ class FooterControlPanelForm(RegistryEditForm):
     schema = IFooterSettings
     label = _(u"Footer control panel")
 
-    # Replace the standard field widget with a nicer one
-    fields = field.Fields(IFooterSettings)
-    fields['footer'].widgetFactory = WysiwygFieldWidget
-
+    #fields = field.Fields(IFooterSettings)
     def update(self):
         super(RegistryEditForm, self).update()
 
