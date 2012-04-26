@@ -21,3 +21,4 @@ class IEditableFooterLayer(Interface):
 
     This interface is referred in browserlayers.xml.
     """
+    
