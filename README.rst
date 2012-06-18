@@ -37,5 +37,18 @@ in the Plone Registry.
 
 Credits
 =======
+
 Rigel Di Scala <zedr@ipnext.it>
 IPnext - your network evolution <http://www.ipnext.it>
+
+
+Changelog
+=========
+
+0.1.8
+-----
+* Minor fixes
+
+0.1.7
+-----
+* Fixes a brown bag release (thanks zopyx)

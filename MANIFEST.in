@@ -1,3 +1,3 @@
 recursive-include ipnext *.py *.pt *xml *.css *.zcml
 recursive-include docs *.txt
-
+include *.rst

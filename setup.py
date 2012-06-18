@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1.6'
+version = '0.1.8'
 
 setup(name='ipnext.site.editablefooter',
       version=version,
@@ -27,6 +27,7 @@ setup(name='ipnext.site.editablefooter',
           'setuptools',
           'plone.app.textfield',
           'plone.app.registry',
+          'plone.dexterity',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

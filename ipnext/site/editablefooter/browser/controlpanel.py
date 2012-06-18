@@ -3,7 +3,6 @@ from z3c.form import field
 from five import grok
 
 from plone.z3cform import layout
-from plone.app.z3cform.wysiwyg import WysiwygFieldWidget
 
 from plone.app.registry.browser.controlpanel import RegistryEditForm
 from plone.app.registry.browser.controlpanel import ControlPanelFormWrapper
